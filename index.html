@@ -12,10 +12,10 @@
             <span class="icon-logo">&#9863; </span>DevPulse
         </a> 
         <nav class="nav-menu">
-            <a href="#price" class="nav-link" aria-label="Price link">Price</a>
+            <a href="#pricing" class="nav-link" aria-label="Price link">Price</a>
             <a href="#features" class="nav-link" aria-label="Features link">Features</a>
             <a href="#estimator" class="nav-link" aria-label="Estimator link">Workload Estimator</a>
-            <a href="#registration" class="nav-link" arial-label="Registration link">Register</a>
+            <a href="#registration" class="nav-link" aria-label="Registration link">Register</a>
             
             <!--CTA -->
             <a href="#registration" class="btn btn-primary">Deploy Free Cluster</a>
@@ -43,40 +43,62 @@
             <h2 class="section-title">Infrastructure Features</h2>
 
             <article class="feature-card">
-                <h3>Latency Tracking</h3>
-                <p>
+                <h3 class="feature-title">Latency Tracking</h3>
+                <p class="feature-descritption">
                 Monitor infrastructure latency and identify performance
                 issues across your cloud workloads.
                 </p>
             </article>
 
             <article class="feature-card">
-                <h3>Log Aggregation</h3>
-                <p>
+                <h3 class="feature-title">Log Aggregation</h3>
+                <p class="feature-descritption">
                 Collect and organize infrastructure logs in one place
                 for easier monitoring and analysis.
                 </p>
             </article>
 
             <article class="feature-card">
-                <h3>Auto-Remediation</h3>
-                <p>
+                <h3 class="feature-title">Auto-Remediation</h3>
+                <p class="feature-descritption">
                 Automatically respond to infrastructure issues and
                 help keep workloads running reliably.
                 </p>
             </article>
         </section>
 
+         <!--Estimator Section-->
         
+        <section id="estimator" class="estimator-section">           
+                <div class="form-wrapper">
+                    <header>
+                        <h2 class="section-title">Workload Estimator</h2>
+                        <p class="section-subtitle">Estimate your infrastructure based on your needs.</p>
+                    </header>
+                    <form method="post" action="#" class="lead-form">
+                        <label for="node" class="form-label">Node count</label>
+                        <input class="form-control" id="node"type="number" name="node" min="1" max="1000" step="1" required>
+
+                        <label for="log-throughput">Log Throughput</label>
+                        <input id="log-throughput" name="log-throughput" type="number" min="1" max="1000" step="1" required>
+                        <button type="submit" class="btn btn-primary" aria-label="Estimate button">Estimate Workload</button>
+                    </form>
+
+                    
+                </div>
+        </section>
+
         <!-- Pricing Section -->
         <section id="pricing" class="pricing-section">
+            <header class="section-header">
             <h2 class="section-title">Cluster Hosting Tiers</h2>
-
+            <p class="section-subtitle">Choose the cluster hosting tier that fits your infrastructure needs.</p>
+            </header>
             <article class="pricing-card">
-                <h3>Developer</h3>
-                <p>For individual developers and small projects.</p>
+                <h3 class="tier-name">Developer</h3>
+                <p class="tier-description">For individual developers and small projects.</p>
 
-                <p class="price">$0</p>
+                <p class="price">Free</p>
 
                 <ul>
                     <li>Basic infrastructure monitoring</li>
@@ -92,8 +114,8 @@
             <article class="pricing-card featured">
                 <mark>Most Popular</mark>
 
-                <h3>Pro Cluster</h3>
-                <p>For teams running production workloads.</p>
+                <h3 class="tier-name">Pro Cluster</h3>
+                <p class="tier-description">For teams running production workloads.</p>
 
                 <p class="price">$99</p>
 
@@ -110,8 +132,8 @@
             </article>
 
             <article class="pricing-card">
-                <h3>Enterprise Dedicated</h3>
-                <p>For organizations with dedicated infrastructure needs.</p>
+                <h3 class="tier-name">Enterprise Dedicated</h3>
+                <p class="tier-description">For organizations with dedicated infrastructure needs.</p>
 
                 <p class="price">Custom</p>
 
@@ -128,22 +150,39 @@
             </article>
         </section>
         
-        <!--Estimator Section-->
-        
-        <section>
-            
-        
-        </section>
+
         
         <!--Registration Section-->
         
-        <section>
-            
+        <section id="registration" class="registration-section">
+            <div>
+                <header>
+                    <h2 class="section-title">API Sandbox Registration</h2>
+                    <p class="section-subtitle">Create account.</p>
+                </header>
+                <form>
+                    <label for="email" class="form-label">Email</label>
+                    <input class="form-control" id="email" type="email" name="email" placeholder="email@gmail.com" required>
+                    <button class="btn btn-primary" type="submit" aria-label="Register Button">Register</button>
+
+                </form>
+            </div>
         </section>
+
     </main>
 
-    <footer>
-
+    <!--Footer Section-->
+    <footer class="site-footer">
+        <div class="footer-container">
+           <p class="footer-copy">&copy; 2026 DevPulse. All rights reserved.</p>
+            <nav class="footer-links" aria-label="Footer Navigation">
+                <a href="#hero" class="footer-link">Back to Top</a>
+                <a href="#estimator" class="footer-link">Estimate</a>
+                <a href="#features" class="footer-link">Features</a>
+                <a href="#pricing" class="footer-link">Pricing</a>
+            </nav> 
+            
+        </div>
     </footer>
 </body>
 </html>
