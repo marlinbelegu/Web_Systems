@@ -1,18 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>DevPulse</title>
-        <link rel="stylesheet" href="styles.css" >
-    </head>
-    <body>
-        <header>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DevPulse</title>
+</head>
+<body>
+    <header class="site-header">
+        <a href="#" aria-label="DevPay Logo">
+            <span class="icon-logo">&#9863; </span>DevPulse
+        </a> 
+        <nav class="nav-menu">
+            <a href="#price" class="nav-link" aria-label="Price link">Price</a>
+            <a href="#features" class="nav-link" aria-label="Features link">Features</a>
+            <a href="#estimator" class="nav-link" aria-label="Estimator link">Workload Estimator</a>
+            <a href="#registration" class="nav-link" arial-label="Registration link">Register</a>
+            
+            <!--CTA -->
+            <a href="#registration" class="btn btn-primary">Deploy Free Cluster</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!--Hero Section-->
+        
+        <section id="hero" class="hero-section">
+            <h1 class="hero-title">DevPulse Cloud Infrastructure</h1>
+            <p class="hero-subtitle">Monitor, manage, 
+                and optimize your cloud infrastructure with powerful 
+                telemetry and automation tools
+            </p>
+            <div class="cta-buttons">
+                <a href="#registration" class="btn btn-primary" aria-label="Register Button">Deploy Free Cluster</a>
+                <a href="price" class="btn btn-secondary" aria-label="Pricing button">View Pricing</a> 
+            </div>
+        </section>
 
-        </header>
 
-        <main>
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <h2 class="section-title">Infrastructure Features</h2>
 
-        </main>
-    </body>
-</htmlt>
+            <article class="feature-card">
+                <h3>Latency Tracking</h3>
+                <p>
+                Monitor infrastructure latency and identify performance
+                issues across your cloud workloads.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <h3>Log Aggregation</h3>
+                <p>
+                Collect and organize infrastructure logs in one place
+                for easier monitoring and analysis.
+                </p>
+            </article>
+
+            <article class="feature-card">
+                <h3>Auto-Remediation</h3>
+                <p>
+                Automatically respond to infrastructure issues and
+                help keep workloads running reliably.
+                </p>
+            </article>
+        </section>
+
+        
+        <!-- Pricing Section -->
+        <section id="pricing" class="pricing-section">
+            <h2 class="section-title">Cluster Hosting Tiers</h2>
+
+            <article class="pricing-card">
+                <h3>Developer</h3>
+                <p>For individual developers and small projects.</p>
+
+                <p class="price">$0</p>
+
+                <ul>
+                    <li>Basic infrastructure monitoring</li>
+                    <li>Latency tracking</li>
+                    <li>Log aggregation</li>
+                </ul>
+
+                <a href="#registration" class="btn btn-secondary">
+                    Get Started
+                </a>
+            </article>
+
+            <article class="pricing-card featured">
+                <mark>Most Popular</mark>
+
+                <h3>Pro Cluster</h3>
+                <p>For teams running production workloads.</p>
+
+                <p class="price">$99</p>
+
+                <ul>
+                    <li>Advanced infrastructure monitoring</li>
+                    <li>Latency tracking</li>
+                    <li>Log aggregation</li>
+                    <li>Auto-remediation</li>
+                </ul>
+
+                <a href="#registration" class="btn btn-primary">
+                    Get Started
+                </a>
+            </article>
+
+            <article class="pricing-card">
+                <h3>Enterprise Dedicated</h3>
+                <p>For organizations with dedicated infrastructure needs.</p>
+
+                <p class="price">Custom</p>
+
+                <ul>
+                    <li>Dedicated infrastructure</li>
+                    <li>Advanced monitoring</li>
+                    <li>Log aggregation</li>
+                    <li>Auto-remediation</li>
+                </ul>
+
+                <a href="#registration" class="btn btn-secondary">
+                    Contact Us
+                </a>
+            </article>
+        </section>
+        
+        <!--Estimator Section-->
+        
+        <section>
+            
+        
+        </section>
+        
+        <!--Registration Section-->
+        
+        <section>
+            
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+</html>
