@@ -8,13 +8,13 @@
 </head>
 <body>
     <header class="site-header">
-        <a href="#" aria-label="DevPay Logo">
+        <a href="#" class="logo-icon" aria-label="DevPay Logo">
             <span class="icon-logo">&#9863; </span>DevPulse
         </a> 
         <nav class="nav-menu">
             <a href="#pricing" class="nav-link" aria-label="Price link">Price</a>
             <a href="#features" class="nav-link" aria-label="Features link">Features</a>
-            <a href="#estimator" class="nav-link" aria-label="Estimator link">Workload Estimator</a>
+            <a href="#estimator" class="nav-link" aria-label="Estimator link">Estimator</a>
             <a href="#registration" class="nav-link" aria-label="Registration link">Register</a>
             
             <!--CTA -->
@@ -26,6 +26,7 @@
         <!--Hero Section-->
         
         <section id="hero" class="hero-section">
+            <div class="badge">Test</div>
             <h1 class="hero-title">DevPulse Cloud Infrastructure</h1>
             <p class="hero-subtitle">Monitor, manage, 
                 and optimize your cloud infrastructure with powerful 
@@ -39,39 +40,45 @@
 
 
         <!-- Features Section -->
-        <section id="features" class="features-section">
-            <h2 class="section-title">Infrastructure Features</h2>
-
+        <section id="features" class="section-container">
+            <header class="section-header">
+                <h2 class="section-title">Infrastructure Features</h2>
+                <p class="section-subtitle">To be filled</p>
+            </header>
+            <div class="feature-grid">
             <article class="feature-card">
                 <h3 class="feature-title">Latency Tracking</h3>
-                <p class="feature-descritption">
-                Monitor infrastructure latency and identify performance
-                issues across your cloud workloads.
-                </p>
+                <ul class="feature-list">
+                    <li>Monitor infrastructure latency</li>
+                    <li>Identify performance issues</li>
+                    <li>Cover all your cloud workloads</li>
+                </ul>
             </article>
 
             <article class="feature-card">
                 <h3 class="feature-title">Log Aggregation</h3>
-                <p class="feature-descritption">
-                Collect and organize infrastructure logs in one place
-                for easier monitoring and analysis.
-                </p>
+                <ul class="feature-list">
+                    <li>Collect infrastructure logs</li>
+                    <li>Organize everything in one place</li>
+                    <li>Simplify monitoring and analysis</li>
+                </ul>
             </article>
 
             <article class="feature-card">
                 <h3 class="feature-title">Auto-Remediation</h3>
-                <p class="feature-descritption">
-                Automatically respond to infrastructure issues and
-                help keep workloads running reliably.
-                </p>
+                <ul class="feature-list">
+                    <li>Automatically respond to infrastructure issues</li>
+                    <li>Keep workloads running reliably</li>
+                </ul>
             </article>
+            </div>
         </section>
 
          <!--Estimator Section-->
         
-        <section id="estimator" class="estimator-section">           
+        <section id="estimator" class="section-container">           
                 <div class="form-wrapper">
-                    <header>
+                    <header class="section-header">
                         <h2 class="section-title">Workload Estimator</h2>
                         <p class="section-subtitle">Estimate your infrastructure based on your needs.</p>
                     </header>
@@ -89,11 +96,12 @@
         </section>
 
         <!-- Pricing Section -->
-        <section id="pricing" class="pricing-section">
+        <section id="pricing" class="section-container">
             <header class="section-header">
             <h2 class="section-title">Cluster Hosting Tiers</h2>
             <p class="section-subtitle">Choose the cluster hosting tier that fits your infrastructure needs.</p>
             </header>
+            <div class="pricing-grid">
             <article class="pricing-card">
                 <h3 class="tier-name">Developer</h3>
                 <p class="tier-description">For individual developers and small projects.</p>
@@ -106,13 +114,13 @@
                     <li>Log aggregation</li>
                 </ul>
 
-                <a href="#registration" class="btn btn-secondary">
+                <a href="#registration" class="btn btn-primary">
                     Get Started
                 </a>
             </article>
 
             <article class="pricing-card featured">
-                <mark>Most Popular</mark>
+                <mark class="marker">Most Popular</mark>
 
                 <h3 class="tier-name">Pro Cluster</h3>
                 <p class="tier-description">For teams running production workloads.</p>
@@ -144,17 +152,18 @@
                     <li>Auto-remediation</li>
                 </ul>
 
-                <a href="#registration" class="btn btn-secondary">
+                <a href="#registration" class="btn btn-primary btn-prices">
                     Contact Us
                 </a>
             </article>
+            </div>
         </section>
         
 
         
         <!--Registration Section-->
         
-        <section id="registration" class="registration-section">
+        <section id="registration" class="section-container">
             <div>
                 <header>
                     <h2 class="section-title">API Sandbox Registration</h2>
