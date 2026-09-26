@@ -6,183 +6,593 @@
     <link rel="stylesheet" href="style.css">
     <title>DevPulse</title>
 </head>
+
 <body>
+
+    <!-- Header Section -->
     <header class="site-header">
-        <a href="#" class="brand-logo" aria-label="DevPulse Logo">
-            <span class="icon-logo">&#9863; </span>DevPulse
-        </a> 
+
+        <a href="#" class="logo-icon" aria-label="DevPulse Logo">
+            <span class="icon-logo">&#9863;</span>
+            <span>DevPulse</span>
+        </a>
+
         <nav class="nav-menu">
-            <a href="#pricing" class="nav-link" aria-label="Price link">Price</a>
-            <a href="#features" class="nav-link" aria-label="Features link">Features</a>
-            <a href="#estimator" class="nav-link" aria-label="Estimator link">Workload Estimator</a>
-            <a href="#registration" class="nav-link" aria-label="Registration link">Register</a>
-            
-            <!--CTA -->
-            <a href="#registration" class="btn btn-primary">Deploy Free Cluster</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#estimator" class="nav-link">Estimator</a>
+            <a href="#registration" class="nav-link">Register</a>
+
+            <!-- CTA -->
+            <a href="#registration" class="btn btn-primary">
+                Deploy Free Cluster
+            </a>
         </nav>
+
     </header>
-    
+
+
     <main>
-        <!--Hero Section-->
-        
+
+        <!-- Hero Section -->
         <section id="hero" class="hero-section">
-            <h1 class="hero-title">DevPulse Cloud Infrastructure</h1>
-            <p class="hero-subtitle">Monitor, manage, 
-                and optimize your cloud infrastructure with powerful 
-                telemetry and automation tools
-            </p>
-            <div class="cta-buttons">
-                <a href="#registration" class="btn btn-primary" aria-label="Register Button">Deploy Free Cluster</a>
-                <a href="#pricing" class="btn btn-secondary" aria-label="Pricing button">View Pricing</a> 
+
+            <div class="badge">
+                Cloud Infrastructure &amp; Telemetry Platform
             </div>
+
+            <h1 class="hero-title">
+                DevPulse Cloud Infrastructure
+            </h1>
+
+            <p class="hero-subtitle">
+                Monitor, manage, and optimize your cloud infrastructure
+                with powerful telemetry and automation tools.
+            </p>
+
+            <div class="cta-buttons">
+                <a href="#registration" class="btn btn-primary ">
+                    Deploy Free Cluster
+                </a>
+
+                <a href="#pricing" class="btn btn-secondary">
+                    View Pricing
+                </a>
+            </div>
+
         </section>
 
 
         <!-- Features Section -->
-        <section id="features" class="features-section">
-            <h2 class="section-title">Infrastructure Features</h2>
+        <section id="features" class="section-container">
 
-            <article class="feature-card">
-                <h3 class="feature-title">Latency Tracking</h3>
-                <p class="feature-descritption">
-                Monitor infrastructure latency and identify performance
-                issues across your cloud workloads.
-                </p>
-            </article>
-
-            <article class="feature-card">
-                <h3 class="feature-title">Log Aggregation</h3>
-                <p class="feature-descritption">
-                Collect and organize infrastructure logs in one place
-                for easier monitoring and analysis.
-                </p>
-            </article>
-
-            <article class="feature-card">
-                <h3 class="feature-title">Auto-Remediation</h3>
-                <p class="feature-descritption">
-                Automatically respond to infrastructure issues and
-                help keep workloads running reliably.
-                </p>
-            </article>
-        </section>
-
-         <!--Estimator Section-->
-        
-        <section id="estimator" class="estimator-section">           
-                <div class="form-wrapper">
-                    <header>
-                        <h2 class="section-title">Workload Estimator</h2>
-                        <p class="section-subtitle">Estimate your infrastructure based on your needs.</p>
-                    </header>
-                    <form method="post" action="#" class="lead-form">
-                        <label for="node" class="form-label">Node count</label>
-                        <input class="form-control" id="node"type="number" name="node" min="1" max="1000" step="1" required>
-
-                        <label for="log-throughput">Log Throughput</label>
-                        <input id="log-throughput" name="log-throughput" type="number" min="1" max="1000" step="1" required>
-                        <button type="submit" class="btn btn-primary" aria-label="Estimate button">Estimate Workload</button>
-                    </form>
-
-                    
-                </div>
-        </section>
-
-        <!-- Pricing Section -->
-        <section id="pricing" class="pricing-section">
             <header class="section-header">
-            <h2 class="section-title">Cluster Hosting Tiers</h2>
-            <p class="section-subtitle">Choose the cluster hosting tier that fits your infrastructure needs.</p>
+                <h2 class="section-title">
+                    Infrastructure Features
+                </h2>
+
+                <p class="section-subtitle">
+                    Monitor performance, centralize logs, and automate
+                    infrastructure recovery from a single platform.
+                </p>
             </header>
-            <article class="pricing-card">
-                <h3 class="tier-name">Developer</h3>
-                <p class="tier-description">For individual developers and small projects.</p>
 
-                <p class="price">Free</p>
+            <div class="feature-grid">
 
-                <ul>
-                    <li>Basic infrastructure monitoring</li>
-                    <li>Latency tracking</li>
-                    <li>Log aggregation</li>
-                </ul>
+                <article class="feature-card">
+                    <h3 class="feature-title">
+                        Latency Tracking
+                    </h3>
 
-                <a href="#registration" class="btn btn-secondary">
-                    Get Started
-                </a>
-            </article>
+                    <ul class="feature-list">
+                        <li>Monitor infrastructure latency</li>
+                        <li>Identify performance issues</li>
+                        <li>Track response times in real time</li>
+                        <li>Compare latency across workloads</li>
+                        <li>Monitor performance across regions</li>
+                        <li>Receive alerts for latency spikes</li>
+                    </ul>
+                </article>
 
-            <article class="pricing-card featured">
-                <mark>Most Popular</mark>
 
-                <h3 class="tier-name">Pro Cluster</h3>
-                <p class="tier-description">For teams running production workloads.</p>
+                <article class="feature-card">
+                    <h3 class="feature-title">
+                        Log Aggregation
+                    </h3>
 
-                <p class="price">$99</p>
+                    <ul class="feature-list">
+                        <li>Collect infrastructure logs</li>
+                        <li>Organize logs in one place</li>
+                        <li>Search logs using filters</li>
+                        <li>Group logs by service or application</li>
+                        <li>Review historical log activity</li>
+                        <li>Simplify monitoring and analysis</li>
+                    </ul>
+                </article>
 
-                <ul>
-                    <li>Advanced infrastructure monitoring</li>
-                    <li>Latency tracking</li>
-                    <li>Log aggregation</li>
-                    <li>Auto-remediation</li>
-                </ul>
 
-                <a href="#registration" class="btn btn-primary">
-                    Get Started
-                </a>
-            </article>
+                <article class="feature-card">
+                    <h3 class="feature-title">
+                        Auto-Remediation
+                    </h3>
 
-            <article class="pricing-card">
-                <h3 class="tier-name">Enterprise Dedicated</h3>
-                <p class="tier-description">For organizations with dedicated infrastructure needs.</p>
+                    <ul class="feature-list">
+                        <li>Automatically respond to infrastructure issues</li>
+                        <li>Keep workloads running reliably</li>
+                        <li>Restart failed services automatically</li>
+                        <li>Apply predefined recovery actions</li>
+                        <li>Reduce manual maintenance tasks</li>
+                        <li>Track remediation events and results</li>
+                    </ul>
+                </article>
 
-                <p class="price">Custom</p>
+            </div>
 
-                <ul>
-                    <li>Dedicated infrastructure</li>
-                    <li>Advanced monitoring</li>
-                    <li>Log aggregation</li>
-                    <li>Auto-remediation</li>
-                </ul>
-
-                <a href="#registration" class="btn btn-secondary">
-                    Contact Us
-                </a>
-            </article>
         </section>
-        
 
-        
-        <!--Registration Section-->
-        
-        <section id="registration" class="registration-section">
-            <div>
-                <header>
-                    <h2 class="section-title">API Sandbox Registration</h2>
-                    <p class="section-subtitle">Create account.</p>
+
+        <!-- Estimator Section -->
+        <section id="estimator" class="section-container">
+
+            <div class="form-wrapper">
+
+                <header class="section-header">
+                    <h2 class="form-title">
+                        Workload Estimator
+                    </h2>
+
+                    <p class="section-subtitle">
+                        Configure your workload requirements to estimate
+                        the infrastructure resources you need.
+                    </p>
                 </header>
-                <form>
-                    <label for="email" class="form-label">Email</label>
-                    <input class="form-control" id="email" type="email" name="email" placeholder="email@gmail.com" required>
-                    <button class="btn btn-primary" type="submit" aria-label="Register Button">Register</button>
+
+
+                <form method="post" action="#" class="lead-form">
+
+                    <!-- Node Count -->
+                    <label for="node" class="form-label">
+                        Node Count
+                    </label>
+
+                    <input
+                        class="form-control"
+                        id="node"
+                        type="number"
+                        name="node"
+                        min="1"
+                        max="1000"
+                        step="1"
+                        placeholder="Enter number of nodes"
+                        required
+                    >
+
+
+                    <!-- Log Throughput -->
+                    <label for="log-throughput" class="form-label">
+                        Log Throughput
+                    </label>
+
+                    <input
+                        class="form-control"
+                        id="log-throughput"
+                        name="log-throughput"
+                        type="number"
+                        min="1"
+                        max="1000"
+                        step="1"
+                        placeholder="Enter log throughput"
+                        required
+                    >
+
+
+                    <!-- Storage -->
+                    <label for="storage" class="form-label">
+                        Storage Requirement (GB)
+                    </label>
+
+                    <input
+                        class="form-control"
+                        id="storage"
+                        name="storage"
+                        type="number"
+                        min="1"
+                        max="1000"
+                        step="1"
+                        placeholder="Enter storage requirement"
+                        required
+                    >
+
+
+                    <!-- Deployment Environment -->
+                    <label for="environment" class="form-label">
+                        Deployment Environment
+                    </label>
+
+                    <select
+                        class="form-control options"
+                        id="environment"
+                        name="environment"
+                        required
+                    >
+                        <option value="">
+                            Select an environment
+                        </option>
+
+                        <option value="development">
+                            Development
+                        </option>
+
+                        <option value="testing">
+                            Testing
+                        </option>
+
+                        <option value="staging">
+                            Staging
+                        </option>
+
+                        <option value="production">
+                            Production
+                        </option>
+                    </select>
+
+
+                    <!-- Monitoring Level -->
+                    <label for="monitoring-level" class="form-label">
+                        Monitoring Level
+                    </label>
+
+                    <select
+                        class="form-control options"
+                        id="monitoring-level"
+                        name="monitoring-level"
+                        required
+                    >
+                        <option value="">
+                            Select monitoring level
+                        </option>
+
+                        <option value="basic">
+                            Basic Monitoring
+                        </option>
+
+                        <option value="advanced">
+                            Advanced Monitoring
+                        </option>
+
+                        <option value="full">
+                            Full Telemetry and Automation
+                        </option>
+                    </select>
+
+
+
+                    <button type="submit" class="btn btn-primary">
+                        Estimate Workload
+                    </button>
 
                 </form>
+
             </div>
+
+        </section>
+
+
+        <!-- Pricing Section -->
+        <section id="pricing" class="section-container">
+
+            <header class="section-header">
+
+                <h2 class="section-title">
+                    Cluster Hosting Tiers
+                </h2>
+
+                <p class="section-subtitle">
+                    Choose the cluster hosting tier that fits your
+                    infrastructure needs.
+                </p>
+
+            </header>
+
+
+            <div class="pricing-grid">
+
+                <!-- Developer Tier -->
+                <article class="pricing-card">
+
+                    <h3 class="tier-name">
+                        Developer
+                    </h3>
+
+                    <p class="tier-description">
+                        For individual developers and small projects.
+                    </p>
+
+                    <p class="price">
+                        Free
+                    </p>
+
+                    <ul class="tier-features">
+                        <li>Basic infrastructure monitoring</li>
+                        <li>Latency tracking</li>
+                        <li>Log aggregation</li>
+                        <li>Community support</li>
+                        <li>Basic telemetry retention</li>
+                    </ul>
+
+                    <a href="#registration" class="btn btn-primary">
+                        Get Started
+                    </a>
+
+                </article>
+
+
+                <!-- Pro Cluster Tier -->
+                <article class="pricing-card featured">
+
+                    <mark class="marker">
+                        Most Popular
+                    </mark>
+
+                    <h3 class="tier-name">
+                        Pro Cluster
+                    </h3>
+
+                    <p class="tier-description">
+                        For teams running production workloads.
+                    </p>
+
+                    <p class="price">
+                        $99
+                    </p>
+
+                    <ul class="tier-features">
+                        <li>Advanced infrastructure monitoring</li>
+                        <li>Latency tracking</li>
+                        <li>Log aggregation</li>
+                        <li>Auto-remediation</li>
+                        <li>Priority support</li>
+                        <li>Extended telemetry retention</li>
+                    </ul>
+
+                    <a href="#registration" class="btn btn-primary">
+                        Get Started
+                    </a>
+
+                </article>
+
+
+                <!-- Enterprise Tier -->
+                <article class="pricing-card">
+
+                    <h3 class="tier-name">
+                        Enterprise 
+                    </h3>
+
+                    <p class="tier-description">
+                        For organizations with dedicated infrastructure needs.
+                    </p>
+
+                    <p class="price">
+                        Custom
+                    </p>
+
+                    <ul class="tier-features">
+                        <li>Dedicated infrastructure</li>
+                        <li>Advanced monitoring</li>
+                        <li>Log aggregation</li>
+                        <li>Auto-remediation</li>
+                        <li>Custom retention policies</li>
+                        <li>Dedicated technical support</li>
+                        <li>Custom deployment configuration</li>
+                    </ul>
+
+                    <a href="#registration" class="btn btn-primary btn-prices">
+                        Contact Us
+                    </a>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- Registration Section -->
+        <section id="registration" class="section-container">
+
+            <div class="form-wrapper">
+
+                <header class="section-header">
+
+                    <h2 class="form-title">
+                        API Sandbox Registration
+                    </h2>
+
+                    <p class="section-subtitle">
+                        Create your DevPulse sandbox account and begin
+                        exploring cloud telemetry tools.
+                    </p>
+
+                </header>
+
+
+                <form method="post" action="#" class="lead-form">
+
+                    <!-- Full Name -->
+                    <label for="full-name" class="form-label">
+                        Full Name
+                    </label>
+
+                    <input
+                        class="form-control"
+                        id="full-name"
+                        type="text"
+                        name="full-name"
+                        placeholder="Enter your full name"
+                        required
+                    >
+
+
+                    <!-- Email -->
+                    <label for="email" class="form-label">
+                        Email Address
+                    </label>
+
+                    <input
+                        class="form-control"
+                        id="email"
+                        type="email"
+                        name="email"
+                        placeholder="email@example.com"
+                        required
+                    >
+
+
+                    <!-- Company -->
+                    <label for="company" class="form-label">
+                        Company or Organization
+                    </label>
+
+                    <input
+                        class="form-control"
+                        id="company"
+                        type="text"
+                        name="company"
+                        placeholder="Enter your company name"
+                    >
+
+
+                    <!-- Account Type -->
+                    <label for="account-type" class="form-label">
+                        Account Type
+                    </label>
+
+                    <select
+                        class="form-control options"
+                        id="account-type"
+                        name="account-type"
+                        required
+                    >
+                        <option value="">
+                            Select account type
+                        </option>
+
+                        <option value="individual">
+                            Individual Developer
+                        </option>
+
+                        <option value="startup">
+                            Startup
+                        </option>
+
+                        <option value="team">
+                            Development Team
+                        </option>
+
+                        <option value="enterprise">
+                            Enterprise
+                        </option>
+                    </select>
+
+
+                    <!-- Deployment Region -->
+                    <label for="region" class="form-label">
+                        Preferred Deployment Region
+                    </label>
+
+                    <select
+                        class="form-control options"
+                        id="region"
+                        name="region"
+                        required
+                    >
+                        <option value="">
+                            Select a region
+                        </option>
+
+                        <option value="north-america">
+                            North America
+                        </option>
+
+                        <option value="europe">
+                            Europe
+                        </option>
+
+                        <option value="asia-pacific">
+                            Asia Pacific
+                        </option>
+                    </select>
+
+
+                    
+
+                    <!-- Terms -->
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="terms"
+                            value="accepted"
+                            required
+                        >
+                        I agree to the terms and conditions.
+                    </label>
+
+
+                    <button
+                        class="btn btn-primary"
+                        type="submit"
+                    >
+                        Create Sandbox Account
+                    </button>
+
+                </form>
+
+            </div>
+
         </section>
 
     </main>
 
-    <!--Footer Section-->
+
+    <!-- Footer Section -->
     <footer class="site-footer">
+
         <div class="footer-container">
-           <p class="footer-copy">&copy; 2026 DevPulse. All rights reserved.</p>
-            <nav class="footer-links" aria-label="Footer Navigation">
-                <a href="#hero" class="footer-link">Back to Top</a>
-                <a href="#estimator" class="footer-link">Estimate</a>
-                <a href="#features" class="footer-link">Features</a>
-                <a href="#pricing" class="footer-link">Pricing</a>
-            </nav> 
-            
+
+            <p class="footer-copy">
+                &copy; 2026 DevPulse. All rights reserved.
+            </p>
+
+            <nav
+                class="footer-links"
+                aria-label="Footer Navigation"
+            >
+                <a href="#hero" class="footer-link">
+                    Back to Top
+                </a>
+
+                <a href="#estimator" class="footer-link">
+                    Estimate
+                </a>
+
+                <a href="#features" class="footer-link">
+                    Features
+                </a>
+
+                <a href="#pricing" class="footer-link">
+                    Pricing
+                </a>
+
+                <a href="#register" class="footer-link">
+                    Contact Us
+                </a>
+            </nav>
+
         </div>
+
     </footer>
+
 </body>
 </html>
+
