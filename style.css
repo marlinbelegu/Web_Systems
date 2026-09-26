@@ -8,21 +8,24 @@
 
 
 /* CSS variable to store design themes */
-
 :root {
-    --bg-dark:#2f4858;
-    --bg-card:#183899;
-    --primary:#f77f00;
-    --primary-hover:#8d4205;
-    --text-main:white;
-    --text-muted:#000000;
-    --border-color:#C5C0A2;
-    --accent:#0ae57f;
-    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI" , Arial , sans-serif;
-    --transition-speed:0.4s;
+    --bg-dark: #202A2E;
+    --bg-card: #2D3A3F;
+    --primary: #E76F51;
+    --primary-hover: #F4A261;
+    --text-main: #F4F1DE;
+    --text-muted: #B8C4C7;
+    --border-color:#52656B;
+    --accent: #2A9D8F;
+    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    --transition-speed: 0.4s;
 }
 
 html{
+    background-image: url('hero-image.jpg');
+    background-repeat: repeat;
+    background-color: rgba(0, 0, 0, 0.9); 
+    background-blend-mode:overlay;
     scroll-behavior: smooth;
     font-family: var(--font-family);
     background-color: var(--bg-dark);
@@ -123,7 +126,8 @@ html{
 .nav-link{
     color:var(--text-main);
     text-decoration: none;
-    font-size: 0.9rem;
+    font-weight: 600;
+    font-size: 1rem;
     transition: color var(--transition-speed);
 }
 
@@ -132,28 +136,32 @@ html{
 }
 
 .hero-section{
+
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 2rem;
+    gap: 3.2rem;
     padding:6rem 1.5rem 4rem 1.5rem;
-    max-width: 900px;
+    max-width: 122222px;
     margin:0 auto;
 }
 
 .hero-title{
-    font-size: 3rem;
+    font-size: 5rem;
     line-height: 1.15;
     font-weight: 800;
     margin-bottom:1.25rem;
+    text-align: center;
 }
 
 .hero-subtitle{
-    font-size: 1.2rem;
+    font-size: 1.7rem;
     color: var(--text-muted);
     margin-bottom: 2rem;
-    max-width: 700px
+    max-width: 700px;
+    text-align: center;
 }
+
 .badge{
     font-size:0.8rem;
     font-weight: 700;
@@ -162,18 +170,20 @@ html{
     background-color: rgba(16, 185,129, 0.1);
     border: 1px solid rgba(16, 185 , 129,0.3);
     border-radius: 99999px;
-    margin: 1.5rem;
+    margin: 4rem;
 }
 
 .cta-buttons{
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 1rem;
+    gap: 2rem;
+    margin-bottom:7.5rem;
 }
 
 /* Sections */
 .section-container{
+
     max-width: 1200px;
     margin:0 auto;
     padding: 3rem 1.5rem;
@@ -184,16 +194,17 @@ html{
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
+    margin-top: 3rem;
 }
 
-.section-titles{
-    font-size: 2rem;
+.section-title{
+    font-size: 3rem;
     font-weight: 700;
     margin-bottom:0.5rem;
 }
 
 .section-subtitle{
-    font-size:1.2rem;
+    font-size:1.8rem;
     color:var(--text-muted);
 }
 
@@ -201,7 +212,8 @@ html{
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    gap:4rem;
+    gap:10rem;
+    padding: 3rem;
 }
 
 .feature-card{
@@ -209,6 +221,7 @@ html{
     flex-direction: column;
     align-content: center;
     gap:2rem;
+    text-align: center;
     background-color: var(--bg-card);
     border:1px solid var(--border-color);
     padding:2rem;
@@ -238,6 +251,11 @@ html{
     align-items: center;
     gap:1.2rem;
     margin-bottom: 3rem;
+    font-size: 1.5rem;
+}
+
+.form-title{
+    font-size: 2.8rem;
 }
 
 .pricing-grid{
@@ -252,6 +270,7 @@ html{
     flex-direction: column;
     align-items: center;
     gap:2rem;
+    text-align: center;
     padding: 2rem;
     border-radius: 6px;
     background-color: var(--bg-card);
@@ -265,8 +284,8 @@ html{
 }
 
 .featured {
-    position: relative; /* this is the fix — gives the marker something to anchor to */
-    border: 2px solid var(--accent); /* optional: makes the "popular" card stand out, matches your screenshot's lighter border */
+    position: relative;  
+    border: 2px solid var(--accent);
 }
 
 .marker {
@@ -276,7 +295,7 @@ html{
     transform: translateX(-50%);
     background-color: var(--accent);
     color: #fff;
-    font-size: 0.5rem; /* 0.5rem is quite tiny, bump if it's hard to read */
+    font-size: 0.5rem; 
     font-weight: 700;
     padding: 0.35rem 0.85rem;
     border-radius: 9999px;
@@ -311,7 +330,7 @@ html{
 .tier-features{
     list-style-type: none;
     margin-bottom:2rem;
-    flex-grow: 1; /* It pushes the button to the bottom evenly */
+    flex-grow: 1;
 }
 
 .tier-features li{
@@ -319,4 +338,50 @@ html{
     border-bottom: 1px solid var(--accent);
     font-size:0.9rem;
     color:var(--text-muted);
+}
+
+
+
+.form-control{
+    width: 12rem;
+    height: 1.7rem;
+    border: 1px solid var(--accent);
+    background-color: var(--text-main);
+    border-radius: 4px;
+
+}
+
+.form-control.options{
+    cursor: pointer;
+}
+
+.form-legend{
+    font-size: 2rem;
+}
+
+
+.site-footer{
+    background-color: var(--bg-card);
+    border-top: 1px solid var(--text-main);
+}
+
+.footer-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+
+.footer-link{
+    text-decoration: none;
+    color: var(--text-main);
+    font-weight: 600;
+    transform: color var(--transition-speed);
+    padding: 1.3rem;
+}
+
+.footer-link:hover{
+    color: var(--accent);
 }
